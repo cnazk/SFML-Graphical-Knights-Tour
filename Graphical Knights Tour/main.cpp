@@ -68,9 +68,9 @@ void drawWindow() {
                 }
                 
                 else {
-                    Text text(board->Get(i, j)->GetOrder(), font, 50);
+                    Text text(board->Get(i, j)->GetOrder(), font, 50 * s.getScale().x);
                     text.setStyle(Text::Bold);
-                    text.setPosition(i * (float)window->getSize().x / 8 + 20, j * (float)window->getSize().x / 8 + 20);
+                    text.setPosition(i * (float)window->getSize().x / 8 + 20 * s.getScale().x, j * (float)window->getSize().x / 8 + 20 * s.getScale().x);
                     text.setFillColor(Color::Black);
                     window->draw(text);
                 }
