@@ -63,7 +63,6 @@ void drawWindow() {
                     Sprite knightSprite(knightTexture);
                     knightSprite.setPosition(i * (float)window->getSize().x / 8, j * (float)window->getSize().x / 8);
                     knightSprite.setScale((float)window->getSize().x / 800, (float)window->getSize().x / 800);
-                    cout<<knightSprite.getScale().x<<endl;
                     
                     window->draw(knightSprite);
                 }
